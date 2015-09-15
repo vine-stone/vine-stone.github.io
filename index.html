@@ -2,11 +2,25 @@
 <html>
     <head>
         <link rel="stylesheet" href="main.css">
-        <script src="processing-1.4.1.min.js"></script> 
+        <script type="text/javascript" src="processing-1.4.1.min.js"></script> 
+        <title>Liana Piedra</title>
+        
+        
+        <script src="processing.js" type="text/javascript"></script>
+		<script type="text/javascript">
+        // convenience function to get the id attribute of generated sketch html element
+        function getProcessingSketchId () { return 'hitmontopfinal'; }
+        </script>
+        
+        
     </head>
     <body>
+        
+        
         <h1>Liana Piedra</h1>
         <h3>Molecular Biologist & Computer Programmer </h3>
+        
+        <div id="main">
         <h4>Working Portfolio</h4>
         
         <!--Summary Video-->
@@ -23,11 +37,27 @@
         </p>
         
         <!--Hitmontop Animation-->
-        <canvas data-processing-sources="processing/hitmontopfinal.pde"></canvas>
-        <p><font size="2">An interactive sketch of the Pokemon, Hitmontop. All motions have key bindings to only the mouse. 
+          
+        <div id="content">
+			<div>
+				<canvas id="hitmontopfinal" data-processing-sources="hitmontopfinal.pde" 
+						width="500" height="400">
+					<p>Your browser does not support the canvas tag.</p>
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    	</div>
+			
+		</div>    
+            
+            
+        <p><font size="2">An interactive sketch with motions that have key bindings to only the mouse. 
         <br>(Hint: Mouse wheel in both directions, along with left, middle, and right button click.)
         <br>Program used: Modeled in Blender, Animated in Processing</font>
         </p>
+            
+        </div>
         
     </body>
 </html>
