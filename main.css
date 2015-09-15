@@ -1,26 +1,80 @@
 html {
-    background-color: #acdede;
+    background-color: #d82159;
     background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
     background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
     -webkit-font-smoothing: antialiased;
 }
 
+
 body {
     margin: 0 auto;
     padding: 2em 3em 5em;
     max-width: 800px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.1em;
-    color: #545454;
-    background-color: #ffffff;
+    font-family: Lucida Grande, Lucida Sans, Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
+    font-size: 11px; 
+    font-weight: normal; 
+    text-decoration: none;
+    line-height: 1.4em;
+    background-color: #bbb;
+    color: #333; 
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+
+	a img { 
+		border: 0px solid transparent;
+	}
+
+	a, a:link, a:visited, a:active, a:hover { 
+		color: #cdcdcd; text-decoration: underline;
+	}
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+ul#menu {
+    padding: 0;
+    margin-bottom: 11px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 600;
     line-height: 1.3em;
+}
+
+h1 {
+    font-family: Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
+	width: 100%; letter-spacing: 0.1em;
+	margin-bottom: 1em; font-size: 1.65em;
 }
 
 h2 {
@@ -48,6 +102,20 @@ img {
     display: block;
     margin: 1.3em auto;
     max-width: 95%;
+}
+
+canvas { 
+    display: block; 
+    outline: 0px; 
+    margin-bottom: 1.5em; 
+}
+
+#content { 
+    margin: 50px auto 0px auto; padding: 25px 25px 15px 25px;
+    width: 1000px; min-width: 300px; overflow: auto;
+    border-left: 1px solid #444; border-top: 1px solid #444; 
+	border-right: 1px solid #333; border-bottom: 1px solid #333;
+	background-color: #3d3d3d;
 }
 
 @-webkit-keyframes colorize {
